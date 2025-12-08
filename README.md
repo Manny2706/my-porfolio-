@@ -6,8 +6,7 @@ This is a personal portfolio website built with [Next.js](https://nextjs.org), s
 
 ## 🚀 Live Demo
 
-View the deployed site here:  
-[https://my-porfolio-five-lac.vercel.app/](https://my-porfolio-five-lac.vercel.app/)
+View the deployed site here:  https://mayankgupta-five-lac.vercel.app/
 
 ---
 
