@@ -1,4 +1,4 @@
-// components/sections/featured-projects-section.tsx
+
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
@@ -7,15 +7,15 @@ const projects = [
     title: "JobSeeker – Job Portal",
     badge: "Full Stack",
     description:
-      "A full-stack platform connecting job seekers with recruiters using Next.js & Django.",
-    tech: "Next.js · Django · PostgreSQL",
+      "A full-stack platform connecting job seekers with recruiters using React.js & Django Rest Framework.",
+    tech: "Rect.js · Django · PostgreSQL · Redis · CLoudinary",
   },
   {
-    title: "KAMPAS ESPORTS Website",
+    title: "Travel agency website",
     badge: "Frontend",
     description:
-      "A modern esports landing page with animated UI sections & dark theme.",
-    tech: "Next.js · Tailwind CSS",
+      "A responsive travel website landing page showcasing destinations and booking options.",
+    tech: "HTML · CSS · JavaScript",
   },
 ];
 

@@ -1,13 +1,14 @@
-// components/sections/skills-section.tsx
+
 const skills = [
   "Next.js",
   "React",
+  "React Native",
   "TypeScript",
   "JavaScript",
-  "Tailwind CSS",
-  "Node.js",
+  "CSS",
+  "HTML",
+  "Python",
   "Django",
-  "MongoDB",
   "PostgreSQL",
   "Git & GitHub",
 ];
@@ -21,11 +22,13 @@ export default function SkillsSection() {
       <p className="text-sm text-slate-400">
         A quick look at tools I use regularly.
       </p>
-      <div className="mt-2 grid grid-cols-2 gap-3 text-xs sm:grid-cols-3 md:grid-cols-4">
+      <div className="mt-2 grid grid-cols-2 gap-3 text-xs sm:grid-cols-3 md:grid-cols-4 hover:gap-4 transition-all duration-300 
+      hover:ease-in-out hover:mt-4 hover:text-sm hover:text-slate-100">
         {skills.map((skill) => (
           <div
             key={skill}
-            className="rounded-lg border border-slate-800 bg-slate-900 px-3 py-2 text-center text-slate-200"
+            className="rounded-lg border border-slate-800 bg-slate-900 px-3 py-2 text-center text-slate-200 hover:bg-slate-800 transition-colors duration-200 ease-in-out 
+            hover:text-slate-100 hover:border-slate-600 hover:border-2"
           >
             {skill}
           </div>

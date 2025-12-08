@@ -11,7 +11,7 @@ import SkillsSection from "@/components/home-components/skills-section";
 import FeaturedProjectsSection from "@/components/home-components/featured-projects-section";
 import ContactSection from "@/components/home-components/contact-section";
 
-import { motion } from "framer-motion"; // 👈 make sure this is here
+import { motion } from "framer-motion"; 
 
 const navItems = [
   { name: "Home", icon: Home, href: "/" },
