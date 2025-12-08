@@ -41,12 +41,12 @@ export default function HomePage() {
 
       {/* 🟣 Draggable + floating circular nav trigger */}
       <motion.div
-        className="fixed top-6 left-6 z-40"  // 👈 default: top-left
+        className="fixed top-6 left-6 z-40"  
         drag
         dragMomentum={false}
         dragElastic={0.2}
         initial={{ y: 0 }}
-        animate={{ y: [0, -8, 0] }}          // 👈 up–down animation
+        animate={{ y: [0, -8, 0] }}         
         transition={{
           duration: 1.6,
           repeat: Infinity,
