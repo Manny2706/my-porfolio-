@@ -64,7 +64,7 @@ export default function AboutPage() {
           {/* Profile Image */}
           <div className="relative h-40 w-40 md:h-48 md:w-48 rounded-full overflow-hidden border border-white/20 shadow-2xl">
             <Image
-              src="/avatar.jpg"
+              src="/mayank.png"
               alt="Mayank Gupta"
               fill
               sizes="(max-width: 768px) 160px, 192px"

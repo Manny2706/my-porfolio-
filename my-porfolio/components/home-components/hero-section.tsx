@@ -6,7 +6,6 @@ import Link from "next/link";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// ⬇️ dynamic, client-only CircularText
 const CircularText = dynamic(
   () => import("@/components/ui/CircularText"),
   { ssr: false }
@@ -106,7 +105,7 @@ export default function HeroSection() {
   rounded-full overflow-hidden border border-slate-700 bg-slate-900 shadow-xl"
 >
   <Image
-    src="/avatar.jpg"
+    src="/mayank.png"
     alt="Mayank Gupta"
     fill
     sizes="
