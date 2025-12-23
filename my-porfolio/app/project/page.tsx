@@ -54,8 +54,15 @@ const projectItems = [
     title: "Forest runner",
     description: "Endless runner game built with Python and Pygame.",
   },
+  {
+    image: "/project-images/birthday-wish.png",
+    link: "https://birthday-wish-by-mayank.netlify.app/",
+    title: "birthday-wish",
+    description: "A fun birthday wish generator using react.js.",
+  },
 
-];
+
+];  
 
 const navItems = [
   { name: "Home", icon: Home, href: "/" },
