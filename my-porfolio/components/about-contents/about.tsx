@@ -20,17 +20,36 @@ const skills = [
   "Python",
   "Tailwind CSS",
   "Node.js",
+  "React Native",
   "Django",
   "MongoDB",
   "PostgreSQL",
   "Git & GitHub",
   "Docker",
+  "Node Package Manager (npm/yarn)",
+  "FASTAPI",
+  "AI Integrations",
+  "Flask",
+  "skitlearn",
+  "Pandas",
+  "NumPy",
+  "Feature Engineering",
+  "Model Evaluation",
+  "Data Visualization",
+  "Machine Learning Algorithms",
+  "Natural Language Processing (NLP)",
+  "Computer Vision",
+  "Model Deployment",
+  "Cloud Services (AWS, Azure, GCP)",
+  "Version Control (Git)",
+  "Collaboration Tools (Jira, Trello, Slack)",
+  
 ];
 
 const educationSteps = [
   {
     title: "B.Tech in Computer Science",
-    subtitle: "AKGEC · 2024–2028",
+    subtitle: "AKGEC Ghaziabad",
     content:
       "Focused on software development, DSA, systems, cloud, and full-stack engineering.",
   },
@@ -55,7 +74,7 @@ const experience = [
     title: "AI with Azure Intern",
     place: "Pynetlabs",
     details:
-      "Worked with Azure AI services, exploring cloud-based AI workflows, model deployment and integration with web apps.",
+      "Developed and deployed Python-based automation workflows using Azure services during internship training ,gaining hands-on experience in cloud and AI integrations.",
   },
   {
     period: "Trainee → Member",
@@ -68,6 +87,8 @@ const experience = [
 
 const achievements = [
   "Member, Computer Society of India (CSI) – AKGEC Student Chapter",
+  "500+ GitHub contributions in the last year",
+  "top 100 at Innovate Bharath hackathon 2026(National Level)",
 ];
 
 function AboutPageContent() {
@@ -85,11 +106,8 @@ function AboutPageContent() {
           interfaces to backend APIs and deployment.
         </p>
         <p className="text-sm md:text-base text-slate-300 leading-relaxed">
-          Most of my projects use{" "}
-          <span className="font-medium text-slate-100">
-            Next.js, React, TypeScript, Tailwind, Node.js and Django
-          </span>
-          . I&apos;m also interested in cloud, AI integrations and how good UI +
+         
+          I&apos;m also interested in cloud, AI integrations and how good UI +
           UX can make tech feel effortless for users.
         </p>
         <p className="text-sm md:text-base text-slate-300 leading-relaxed">

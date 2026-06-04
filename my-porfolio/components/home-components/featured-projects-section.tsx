@@ -4,18 +4,18 @@ import { ArrowRight } from "lucide-react";
 
 const projects = [
   {
-    title: "JobSeeker – Job Portal",
+    title: "Pitwatch-Ai-road-suvaliance-app",
     badge: "Full Stack",
     description:
-      "A full-stack platform connecting job seekers with recruiters using React.js & Django Rest Framework.",
-    tech: "Rect.js · Django · PostgreSQL · Redis · CLoudinary",
+      "Pitwatch-Ai-road-suvaliance-app- is an AI-assisted road surveillance platform for detecting potholes, tracking hazard reports, and presenting operational insights across a Flutter mobile app, a Django REST backend, and a React dashboard.",
+    tech: "React.js · Django · PostgreSQL · Redis · CCloudinary · Docker · PostGIS · FLutter · Celery",
   },
   {
-    title: "Travel agency website",
-    badge: "Frontend",
+    title: "SarthiAi",
+    badge: "Full Stack",
     description:
-      "A responsive travel website landing page showcasing destinations and booking options.",
-    tech: "HTML · CSS · JavaScript",
+      "SarthiAi is a full-stack application designed to provide intelligent assistance for travelers, offering features like route planning, accommodation booking, and real-time updates.",
+    tech: " Django · PostgreSQL · Redis · CCloudinary · Docker · Vapi ",
   },
 ];
 

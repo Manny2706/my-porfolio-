@@ -168,7 +168,7 @@ export default function ContactPage() {
               <p className="mt-3 text-xs text-slate-400">
                You can contact me at {" "}
                 <span className="font-mono text-slate-200">
-                 630-667-1439
+                 +91-630-667-1439
                 </span>
                 .
               </p>

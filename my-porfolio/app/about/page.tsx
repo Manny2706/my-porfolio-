@@ -77,10 +77,6 @@ export default function AboutPage() {
             Mayank Gupta
           </h1>
 
-          {/* Subtitle */}
-          <p className="max-w-xl text-slate-200/90 text-sm md:text-base leading-relaxed">
-            Full Stack Developer crafting immersive web experiences with modern UI, motion & 3D aesthetics.
-          </p>
 
           {/* Social Links */}
           <div className="flex items-center gap-3">

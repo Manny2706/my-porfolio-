@@ -60,7 +60,17 @@ const projectItems = [
     title: "birthday-wish",
     description: "A fun birthday wish generator using react.js.",
   },
-
+{
+    image: "/project-images/Sarthi.png",
+    link: "https://github.com/Manny2706/SarthiAi",
+    title: "SarthiAi",
+    description: "A full-stack application for intelligent travel assistance.",
+  },{
+    image: "/project-images/Pitwatch.png",
+    link: "https://github.com/Manny2706/Pitwatch-Ai-road-surveillance-app",
+    title: "Pitwatch-Ai-road-surveillance-app",
+    description: "An AI-assisted road surveillance platform for detecting potholes and tracking hazard reports.",
+  },
 
 ];  
 
