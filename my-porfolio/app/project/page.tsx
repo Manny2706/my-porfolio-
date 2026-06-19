@@ -66,7 +66,7 @@ const projectItems = [
     title: "SarthiAi",
     description: "A full-stack application for intelligent travel assistance.",
   },{
-    image: "/project-images/Pitwatch.png",
+    image: "/project-images/Pitwach.png",
     link: "https://github.com/Manny2706/Pitwatch-Ai-road-surveillance-app",
     title: "Pitwatch-Ai-road-surveillance-app",
     description: "An AI-assisted road surveillance platform for detecting potholes and tracking hazard reports.",
