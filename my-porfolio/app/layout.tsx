@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import SplashCursor from "@/components/ui/SplashCursor"; 
+import SplashCursor from "@/components/ui/SplashCursor";
 export const metadata: Metadata = {
-  title: "Mayank Gupta | Portfolio",
-  description: "Full Stack Developer portfolio built with Next.js.",
+  title: "Mayank Gupta | Software Development Engineer",
+  description:
+    "Software Development Engineer specializing in Python, Backend, Full Stack, and AI-powered applications using Django, FastAPI, Next.js, Node.js, and PostgreSQL.",
 };
 
 

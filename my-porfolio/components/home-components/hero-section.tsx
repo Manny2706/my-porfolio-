@@ -17,7 +17,7 @@ export default function HeroSection() {
       {/* LEFT: text */}
       <div className="max-w-xl text-center md:text-left">
         <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-400">
-          Portfolio · Developer · Creator
+          Software Development Engineer · Python · Backend · Full Stack
         </p>
 
         <h1 className="mt-3 text-4xl font-bold tracking-tight md:text-5xl">
@@ -29,9 +29,10 @@ export default function HeroSection() {
         </h1>
 
         <p className="mt-3 text-sm text-slate-400 md:text-base">
-          Full Stack developer who enjoys building clean, fast and modern web apps using{" "}
+          Software Developer building scalable web applications, REST APIs,
+          real-time systems, and AI-powered apps using{" "}
           <span className="text-slate-200 font-medium">
-            Next.js, React, Node.js &amp; Django.
+            Python, Django, FastAPI, Next.js, Node.js &amp; PostgreSQL.
           </span>
         </p>
 

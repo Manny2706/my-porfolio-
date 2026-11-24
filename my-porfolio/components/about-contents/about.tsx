@@ -2,6 +2,7 @@
 
 import GsapSection from "@/components/ui/GsapSection";
 import Stepper from "@/components/ui/Stepper";
+import { skillCategories } from "@/lib/portfolio-data";
 import {
   GraduationCap,
   Briefcase,
@@ -10,54 +11,18 @@ import {
   Mail,
 } from "lucide-react";
 
-const skills = [
-  "Next.js",
-  "React",
-  "TypeScript",
-  "JavaScript",
-  "CSS",
-  "HTML",
-  "Python",
-  "Tailwind CSS",
-  "Node.js",
-  "React Native",
-  "Django",
-  "MongoDB",
-  "PostgreSQL",
-  "Git & GitHub",
-  "Docker",
-  "Node Package Manager (npm/yarn)",
-  "FASTAPI",
-  "AI Integrations",
-  "Flask",
-  "skitlearn",
-  "Pandas",
-  "NumPy",
-  "Feature Engineering",
-  "Model Evaluation",
-  "Data Visualization",
-  "Machine Learning Algorithms",
-  "Natural Language Processing (NLP)",
-  "Computer Vision",
-  "Model Deployment",
-  "Cloud Services (AWS, Azure, GCP)",
-  "Version Control (Git)",
-  "Collaboration Tools (Jira, Trello, Slack)",
-  
-];
-
 const educationSteps = [
   {
-    title: "B.Tech in Computer Science",
-    subtitle: "AKGEC Ghaziabad",
+    title: "B.Tech in Computer Science and Engineering",
+    subtitle: "Ajay Kumar Garg Engineering College, Ghaziabad · CGPA: 8.30/10",
     content:
-      "Focused on software development, DSA, systems, cloud, and full-stack engineering.",
+      "Focused on Data Structures & Algorithms, OOP, DBMS, Operating Systems, Computer Networks, and full-stack software engineering.",
   },
   {
-    title: "Class 12 (PCM)",
-    subtitle: "Sainik Institute · 2024",
+    title: "Class 12 (Science)",
+    subtitle: "Sainik Institute Inter College, Bahraich · 2022–2024 · 85%",
     content:
-      "Completed higher secondary education with interest in CS & mathematics.",
+      "Completed higher secondary education in Science with strong focus on mathematics and computer science.",
   },
   {
     title: "Class 10",
@@ -67,28 +32,28 @@ const educationSteps = [
   },
 ];
 
-
 const experience = [
+  {
+    period: "Technical Society",
+    title: "Backend Developer",
+    place: "Computer Society of India (CSI), AKGEC",
+    details:
+      "Developed registration pages supporting 2,000+ registrations and exam portals designed to serve thousands of concurrent users.",
+  },
   {
     period: "Internship",
     title: "AI with Azure Intern",
-    place: "Pynetlabs",
+    place: "Pynelabs",
     details:
-      "Developed and deployed Python-based automation workflows using Azure services during internship training ,gaining hands-on experience in cloud and AI integrations.",
-  },
-  {
-    period: "Trainee → Member",
-    title: "CSI Trainee & Member",
-    place: "Computer Society of India – AKGEC",
-    details:
-      "Completed CSI trainee program and became an active member, participating in tech events, sessions and community activities.",
+      "Developed Python automation workflows using Azure AI services, reducing manual tasks by 40%, while gaining hands-on experience with cloud services and AI integration.",
   },
 ];
 
 const achievements = [
+  "600+ GitHub Contributions",
+  "GitHub Achievements: YOLO, Pull Shark ×2, Quickdraw",
+  "Top 100 at Innovate Bharath Hackathon 2026 (National Level)",
   "Member, Computer Society of India (CSI) – AKGEC Student Chapter",
-  "500+ GitHub contributions in the last year",
-  "top 100 at Innovate Bharath hackathon 2026(National Level)",
 ];
 
 function AboutPageContent() {
@@ -100,20 +65,21 @@ function AboutPageContent() {
           About Me
         </h2>
         <p className="text-sm md:text-base text-slate-300 leading-relaxed">
-          I&apos;m Mayank Gupta, a Computer Science undergrad and Full Stack
-          Developer who loves building clean, fast and visually appealing web
-          experiences. I enjoy working across the stack — from frontend
-          interfaces to backend APIs and deployment.
+          I&apos;m Mayank Gupta, a Software Developer and Computer Science
+          undergrad with hands-on experience building scalable web applications,
+          REST APIs, authentication systems, and real-time applications using
+          Python, Django, FastAPI, Node.js, and PostgreSQL.
         </p>
         <p className="text-sm md:text-base text-slate-300 leading-relaxed">
-         
-          I&apos;m also interested in cloud, AI integrations and how good UI +
-          UX can make tech feel effortless for users.
+          I&apos;m experienced in database optimization, asynchronous task
+          processing, cloud integrations (AWS S3, Azure AI Services), and
+          AI-powered applications — focused on writing maintainable code and
+          building reliable software systems.
         </p>
         <p className="text-sm md:text-base text-slate-300 leading-relaxed">
-          Beyond code, I like exploring new tools, contributing to tech
-          communities like CSI, and experimenting with animations and motion
-          to make portfolios and apps stand out.
+          Beyond code, I contribute to tech communities like CSI AKGEC, explore
+          agentic AI and multimodal workflows, and craft responsive frontends
+          with React and Next.js.
         </p>
 
         <a
@@ -138,13 +104,25 @@ function AboutPageContent() {
         <p className="text-sm text-slate-400">
           Technologies, languages and tools I use regularly:
         </p>
-        <div className="mt-2 grid grid-cols-2 gap-3 text-xs sm:grid-cols-3 md:grid-cols-4">
-          {skills.map((skill) => (
+        <div className="mt-2 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {skillCategories.map((group) => (
             <div
-              key={skill}
-              className="rounded-lg border border-slate-800 bg-slate-900 px-3 py-2 text-center text-slate-200"
+              key={group.category}
+              className="rounded-xl border border-slate-800 bg-slate-900/70 p-4"
             >
-              {skill}
+              <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-400">
+                {group.category}
+              </h3>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {group.items.map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-md border border-slate-800 bg-slate-950/80 px-2.5 py-1 text-xs text-slate-200"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
         </div>

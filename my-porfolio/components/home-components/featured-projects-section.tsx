@@ -1,23 +1,6 @@
-
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
-
-const projects = [
-  {
-    title: "Pitwatch-Ai-road-suvaliance-app",
-    badge: "Full Stack",
-    description:
-      "Pitwatch-Ai-road-suvaliance-app- is an AI-assisted road surveillance platform for detecting potholes, tracking hazard reports, and presenting operational insights across a Flutter mobile app, a Django REST backend, and a React dashboard.",
-    tech: "React.js · Django · PostgreSQL · Redis · CCloudinary · Docker · PostGIS · FLutter · Celery",
-  },
-  {
-    title: "SarthiAi",
-    badge: "Full Stack",
-    description:
-      "SarthiAi is a full-stack application designed to provide intelligent assistance for travelers, offering features like route planning, accommodation booking, and real-time updates.",
-    tech: " Django · PostgreSQL · Redis · CCloudinary · Docker · Vapi ",
-  },
-];
+import { ArrowRight, ExternalLink } from "lucide-react";
+import { featuredProjects } from "@/lib/portfolio-data";
 
 export default function FeaturedProjectsSection() {
   return (
@@ -36,22 +19,43 @@ export default function FeaturedProjectsSection() {
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
-        {projects.map((project) => (
+        {featuredProjects.map((project) => (
           <div
             key={project.title}
-            className="rounded-xl border border-slate-800 bg-slate-900 p-4"
+            className="flex flex-col justify-between rounded-xl border border-slate-800 bg-slate-900/80 p-5 transition-colors hover:border-slate-700"
           >
-            <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-500">
-              {project.badge}
-            </p>
-            <h3 className="mt-1 text-lg font-semibold text-slate-100">
-              {project.title}
-            </h3>
-            <p className="mt-1 text-sm text-slate-400">
-              {project.description}
-            </p>
-            <p className="mt-2 text-xs text-slate-500">
-              Tech: {project.tech}
+            <div>
+              <div className="flex items-center justify-between gap-2">
+                <p className="text-xs font-medium uppercase tracking-[0.2em] text-sky-400">
+                  {project.badge}
+                </p>
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 text-xs text-slate-400 hover:text-sky-300"
+                  >
+                    {project.linkLabel ?? "View"}
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                )}
+              </div>
+              <h3 className="mt-1.5 text-lg font-semibold text-slate-100">
+                {project.title}
+              </h3>
+              <p className="mt-1.5 text-sm text-slate-300">
+                {project.description}
+              </p>
+              <ul className="mt-3 space-y-1.5 text-xs text-slate-400 list-disc pl-4">
+                {project.highlights.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+
+            <p className="mt-4 border-t border-slate-800 pt-3 text-xs text-slate-400">
+              <span className="text-slate-500">Tech:</span> {project.tech}
             </p>
           </div>
         ))}

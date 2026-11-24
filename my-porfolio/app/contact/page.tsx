@@ -82,7 +82,7 @@ export default function ContactPage() {
 
               <div className="flex items-center gap-2 text-slate-400">
                 <MapPin className="h-4 w-4 text-sky-400" />
-                <span>Based in India · Open to remote</span>
+                <span>Noida, India · Open to remote</span>
               </div>
 
               <div className="pt-2">
@@ -145,9 +145,9 @@ export default function ContactPage() {
                 Available for internships & freelance work
               </h2>
               <p className="text-sm text-slate-300">
-                I enjoy building clean, performant web apps using Next.js,
-                React, Node.js and Django. If you have an idea or product in
-                mind, I&apos;d love to hear about it.
+                I build scalable backend systems, REST APIs, real-time apps, and
+                AI-powered web products using Python, Django, FastAPI, Next.js,
+                Node.js, and PostgreSQL.
               </p>
 
               <div className="mt-3 grid grid-cols-2 gap-3 text-xs text-slate-300">
@@ -155,7 +155,7 @@ export default function ContactPage() {
                   <p className="text-[11px] uppercase tracking-[0.16em] text-slate-500">
                     Focus
                   </p>
-                  <p className="mt-1 text-sm">Full Stack Web · UI-heavy</p>
+                  <p className="mt-1 text-sm">Python · Backend · Full Stack</p>
                 </div>
                 <div className="rounded-lg border border-slate-800 bg-slate-900/60 p-3">
                   <p className="text-[11px] uppercase tracking-[0.16em] text-slate-500">

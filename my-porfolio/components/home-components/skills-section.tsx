@@ -1,58 +1,36 @@
-
-const skills = [
-  "Next.js",
-  "React",
-  "TypeScript",
-  "JavaScript",
-  "CSS",
-  "HTML",
-  "Python",
-  "Tailwind CSS",
-  "Node.js",
-  "React Native",
-  "Django",
-  "MongoDB",
-  "PostgreSQL",
-  "Git & GitHub",
-  "Docker",
-  "Node Package Manager (npm/yarn)",
-  "FASTAPI",
-  "AI Integrations",
-  "Flask",
-  "skitlearn",
-  "Pandas",
-  "NumPy",
-  "Feature Engineering",
-  "Model Evaluation",
-  "Data Visualization",
-  "Machine Learning Algorithms",
-  "Natural Language Processing (NLP)",
-  "Computer Vision",
-  "Model Deployment",
-  "Cloud Services (AWS, Azure, GCP)",
-  "Version Control (Git)",
-  "Collaboration Tools (Jira, Trello, Slack)",
-  
-];
+import { skillCategories } from "@/lib/portfolio-data";
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="space-y-4">
-      <h2 className="text-xl font-semibold text-slate-100">
-        Skills &amp; Tech
-      </h2>
-      <p className="text-sm text-slate-400">
-        A quick look at tools I use regularly.
-      </p>
-      <div className="mt-2 grid grid-cols-2 gap-3 text-xs sm:grid-cols-3 md:grid-cols-4 hover:gap-4 transition-all duration-300 
-      hover:ease-in-out hover:mt-4 hover:text-sm hover:text-slate-100">
-        {skills.map((skill) => (
+    <section id="skills" className="space-y-5">
+      <div>
+        <h2 className="text-xl font-semibold text-slate-100">
+          Technical Skills
+        </h2>
+        <p className="mt-1 text-sm text-slate-400">
+          Languages, frameworks, databases, cloud tools, and core CS fundamentals.
+        </p>
+      </div>
+
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {skillCategories.map((group) => (
           <div
-            key={skill}
-            className="rounded-lg border border-slate-800 bg-slate-900 px-3 py-2 text-center text-slate-200 hover:bg-slate-800 transition-colors duration-200 ease-in-out 
-            hover:text-slate-100 hover:border-slate-600 hover:border-2"
+            key={group.category}
+            className="rounded-xl border border-slate-800 bg-slate-900/70 p-4 transition-colors hover:border-slate-700"
           >
-            {skill}
+            <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-sky-400">
+              {group.category}
+            </h3>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {group.items.map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-md border border-slate-800 bg-slate-950/80 px-2.5 py-1 text-xs text-slate-200"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
         ))}
       </div>
