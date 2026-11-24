@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Mail, Github, Linkedin, Instagram, MapPin, Menu } from "lucide-react";
 
 import CircularNavigation from "@/components/ui/cicular-navigation-bar";
+import WhatsAppMessageBox from "@/components/whatsapp-message-box";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
@@ -118,21 +119,8 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Simple mailto CTA instead of complex form (for now) */}
-            <div className="rounded-2xl border border-slate-800 bg-slate-900/70 backdrop-blur p-5 sm:p-6 shadow-lg shadow-sky-500/10">
-              <h2 className="mb-3 text-sm font-semibold text-slate-100">
-                Quick message
-              </h2>
-              <p className="mb-4 text-sm text-slate-300">
-                Click below to open your email client with a pre-filled subject.
-              </p>
-              <a
-                href="mailto:mayankgupta270606@gmail.com?subject=Let%27s%20work%20together"
-                className="inline-flex items-center justify-center rounded-md bg-sky-500 px-4 py-2 text-sm font-medium text-slate-950 hover:bg-sky-400 transition"
-              >
-                Email me
-              </a>
-            </div>
+            {/* Direct WhatsApp message box */}
+            <WhatsAppMessageBox showEmailFallback />
           </section>
 
           {/* RIGHT: Highlight card over LightRays */}
