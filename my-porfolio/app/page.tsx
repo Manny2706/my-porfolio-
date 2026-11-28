@@ -39,7 +39,7 @@ export default function HomePage() {
         <ContactSection />
       </main>
 
-      {/* 🟣 Draggable + floating circular nav trigger */}
+      {/* 🟣 Draggable + floating circular nav trigger, need changes here  */}
       <motion.div
         className="fixed top-6 left-6 z-40"  
         drag
